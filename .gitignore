@@ -1,0 +1,9 @@
+# don't put video, text, or audio files in the repo
+*.mp4
+*.txt
+*.wav
+
+# don't put any of the vscode or venv info in the repo
+.vscode/**
+.venv/**
+
