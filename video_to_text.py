@@ -2,9 +2,10 @@
 import os
 import glob
 import speech_recognition as sr
+import sys
 
 # specify the location of ffmpeg for the project and grab all mp4s in the current folder and all folders below
-ffmpeg_location = "C:\\ProgramData\\chocolatey\\lib\\ffmpeg\\tools\\ffmpeg\\bin\\ffmpeg.exe"
+ffmpeg_location = sys.argv[1] # send in the ffmpeg exe file through a command line arguement
 video_files = glob.glob("./**/*.mp4", recursive=True) # grab all mp4s in the folder
 
 # prep the speech recognizer for converting from audio to text
